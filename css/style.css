@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+.card {
+ overflow: hidden; 
+}
+
+
+.border-select {
+  border: 1px dashed #989898;
+}
+
+
+
+#wrap-chat{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+
+#bar-f-l {
+  display: none;
+}
+
+.no-pad{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#show-contact {
+  display: none;
+}
+
+#hide-contact {
+  display: none;
+}
+
+#search{
+  padding: 1em;
+  background-color: #7978b8;
+}
+
+
+
+ul > li.media {
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+ul > li.media p {
+  font-size: 14px;
+    color: #989898;
+    margin: auto;
+}
+
+ul > li.media span {
+  font-size: 12px;
+  color: #989898;;
+  float: right;
+}
+
+ul > li.media:hover{
+  background-color: #ebebeb;
+}
+
+ul > li.media:hover h6.name-contact {
+   color: #343a40;
+}
+
+.name-contact {
+  color: #7978b8;
+}
+
+.list-contact {
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.contact-active {
+  background-color: #ebebeb !important;
+}
+
+.contact-active h6{
+  color: #343a40;
+}
+
+#chatbox {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  padding-right: 25px;
+}
+
+#input-message {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  padding: 1em;
+  border-top: 1px solid #ccc;
+}
+
+#input-message > input{
+  border: none !important;
+}
+
+#message-container {
+  display: block;
+  height: 615px;
+  overflow-y: scroll;
+  padding-top: 20px;
+  width: 765px;
+  padding-right: 20px;
+}
+
+
+#message-container ul{
+  padding-left: 0px;
+}
+
+#message-container ul li {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.mod-row-right{
+   margin-right: 0px;
+}
+
+
+#message-container ul li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#message-container ul > li > span {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+
+#message-container ul li div.other {
+  
+  max-width: 80%;
+  color: #7978b8;
+  background-color: #dddced;
+  border-color: #bbbbdb;
+  margin-bottom: 5px;
+  float: left;
+  
+}
+
+
+#message-container ul li div.me {
+  max-width: 80%;
+  float: right;
+  text-align: right;
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+.me-date {
+  float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.other-date {
+  float: right;
+    width: 100%;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.other-img{
+  float: left;
+}
+
+.badge {
+  cursor: pointer;
+}
+
+.badge-custom {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+
+.badge-active {
+
+  background-color: #7978b8;
+  color: #fff;
+}
+
+.form-control {
+  display: inline-block;
+  width: 90%;
+}
+
+#input-message .btn-primary {
+  margin-bottom: 5px;
+  background-color: #7978b8;
+  border-color: #63629a;
+}
+
+#input-message  .btn-primary:hover {
+  color: #7978b8;
+  background-color: #dcdced;
+  border-color: #c6c7d5;
+}
+
+#filter {
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.76);
+  z-index: 9000;
+  right: 5px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+#filter i {
+  color: #6c757d;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+
+  #bar-f-l {
+    display: block;
+    padding: 10px;
+    background-color: #e9ecef;
+  }
+
+  #bar-f {
+    display: none;
+  }
+
+
+  #show-contact {
+    display: block;
+  }
+
+  #hide-contact {
+    display: block;
+  }
+
+  .no-pad {
+    padding-left: 30px;
+}
+
+.list-contact {
+  overflow-y: scroll;
+  height: 700px;
+  position: absolute;
+  z-index: 50000;
+  background-color: white;
+  width: 100%;
+  left: -513px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  background-color: #f8f9fa;
+}
+
+#message-container {
+  height: 630px;
+  width: 510px;
+
+}
+
+.col-md-8 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+.form-control {
+  display: inline-block;
+  width: 85%;
+}
+
+
+#filter {
+  width: 95%;
+}
+
+}
+
+@media (max-width: 500px){
+  #message-container {
+    height: 635px;
+    width: 385px;
+ }
+
+
+ #input-message .btn-primary {
+  display: none;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.other-img {
+  float: left;
+  width: 30px;
+  height: auto;
+}
+
+#filter {
+  width: 93%;
+}
+
+#search > input {
+  width: 90%;
+}
+
+.list-contact {
+  width: 96%;
+}
+
+
+}
+
+.show {
+  display: block;
+  width: 96% !important;
+  left: 17px;
+}
+
+@media (max-width: 380px){
+
+  #chatbox {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    padding-right: 25px;
+}
+
+#message-container {
+  height: 525px;
+  width: 321px;
+}
+
+.mt-5 {
+  margin-top: 1rem!important;
+}
+
+}

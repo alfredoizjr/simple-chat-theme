@@ -1,0 +1,94 @@
+#drop-menu {
+    display: none;
+    position: absolute;
+    width: 30%; 
+    right: 23px;
+    z-index: 9000;
+    top: 7%;
+    -webkit-box-shadow: 6px 7px 16px -6px rgba(0,0,0,0.63);
+-moz-box-shadow: 6px 7px 16px -6px rgba(0,0,0,0.63);
+box-shadow: 6px 7px 16px -6px rgba(0,0,0,0.63);
+transition: all 0.5s;
+
+}
+
+
+#drop-menu ul li > .badge-ligth {
+    background-color: #e9ecef;
+    color: #e9ecef;
+}
+
+#drop-menu ul li > .badge-dark {
+    background-color: #505c8c;
+    color: #505c8c;
+}
+
+#drop-menu ul li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    margin-top: 1px;
+    cursor: pointer;
+    padding-right: 5px;
+    transition: all 0.5s;
+}
+
+#drop-menu ul li:hover {
+
+    background-color: #ccc;
+}
+
+
+#drop-menu ul li:last-child {
+    border-bottom: none;
+}
+
+img.online {
+    border: 2px solid #02db33;
+  }
+
+  img.offline {
+    border: 2px solid #ccc;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+
+  .append-btn-search {
+    position: absolute;
+    color: #6c757d;
+    right: 86px;
+    top: 23px;
+
+  }
+
+.append-btn-search > i {
+ 
+    color: #949da5 !important;
+
+  }
+
+
+  #hide-contact {
+    float: right;
+    margin-top: 7px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 500px){
+
+    .append-btn-search {
+        right: 55px;
+    
+      }
+
+      #drop-menu {
+        width: 50%;
+        top: 8%;
+    }
+
+  }
+  
