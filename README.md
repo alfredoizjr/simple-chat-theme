@@ -10,6 +10,10 @@ It's a simple theme for a application chat, built with html5 css3 and Jquery,whe
 
 ![alt text](img/screen-dark.PNG "Description goes here")
 
+## Example dark Heat
+
+![alt text](img/screen-hot.PNG "Description goes here")
+
 ## Installation
 
 Just Donwload it and use
