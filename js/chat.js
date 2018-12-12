@@ -9,9 +9,11 @@ $(document).ready(function () {
     if (localStorage.getItem('theme') === 'style.css') {
       $('.badge-ligth').addClass('border-select');
       // $('#dark').removeClass('border-select');
-    } else {
+    } else if(localStorage.getItem('theme') === 'dark.css'){
       $('.badge-dark').addClass('border-select');
       // $('#ligth').removeClass('border-select');
+    } else if(localStorage.getItem('theme') === 'hot.css') {
+      $('.badge-hot').addClass('border-select');
     }
   } else {
     $("head link#theme").attr("href", 'css/style.css');
@@ -41,20 +43,32 @@ $(document).ready(function () {
   chatDiv.animate({ scrollTop: h + 300 });
 
 
-  //set theme and save in localstorage      
+  //set theme and save in localstorage
+  //# ligth  
   $('#dark').on('click', function () {
     $("head link#theme").attr("href", 'css/dark.css');
     $('.badge-dark').addClass('border-select');
     $('.badge-ligth').removeClass('border-select');
+    $('.badge-hot').removeClass('border-select');
     localStorage.setItem('theme', 'dark.css');
    
   });
-
+//#dark
   $('#ligth').on('click', function () {
     $("head link#theme").attr("href", 'css/style.css');
     $('.badge-dark').removeClass('border-select');
+    $('.badge-hot').removeClass('border-select');
     localStorage.setItem('theme', 'style.css');
     $('.badge-ligth').addClass('border-select');
+  
+  });
+//#hot
+  $('#hot').on('click', function () {
+    $("head link#theme").attr("href", 'css/hot.css');
+    $('.badge-dark').removeClass('border-select');
+    $('.badge-ligth').removeClass('border-select');
+    localStorage.setItem('theme', 'hot.css');
+    $('.badge-hot').addClass('border-select');
   
   });
 

@@ -23,6 +23,11 @@ transition: all 0.5s;
     color: #505c8c;
 }
 
+#drop-menu ul li > .badge-hot {
+    background-color: #bd2130;
+    color: #bd2130;
+}
+
 #drop-menu ul li {
     border-bottom: 1px solid #ccc;
     margin-bottom: 1px;
@@ -55,19 +60,7 @@ img.online {
   }
 
 
-  .append-btn-search {
-    position: absolute;
-    color: #6c757d;
-    right: 86px;
-    top: 23px;
 
-  }
-
-.append-btn-search > i {
- 
-    color: #949da5 !important;
-
-  }
 
 
   #hide-contact {
@@ -78,10 +71,22 @@ img.online {
   }
 
 
+  #input-message .btn-primary {
+    margin-bottom: 5px;
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    border-radius: 0 50px 50px 0;
+    right: 50px;
+    padding: 7px;
+} 
+
+
+
   @media (max-width: 500px){
 
     .append-btn-search {
-        right: 55px;
+        right: 51px;
     
       }
 

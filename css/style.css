@@ -111,6 +111,7 @@ ul > li.media:hover h6.name-contact {
 
 #input-message > input{
   border: none !important;
+  background-color: #dee1e6;
 }
 
 #message-container {
@@ -208,17 +209,7 @@ ul > li.media:hover h6.name-contact {
   width: 90%;
 }
 
-#input-message .btn-primary {
-  margin-bottom: 5px;
-  background-color: #7978b8;
-  border-color: #63629a;
-}
 
-#input-message  .btn-primary:hover {
-  color: #7978b8;
-  background-color: #dcdced;
-  border-color: #c6c7d5;
-}
 
 #filter {
   width: 100%;
@@ -236,6 +227,46 @@ ul > li.media:hover h6.name-contact {
   cursor: pointer;
 }
 
+
+
+
+.append-btn-search {
+  position: absolute;
+  right: 82px;
+  top: 20px;
+  background-color: #7978b8;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+}
+
+.append-btn-search > i {
+
+  color: #fff !important;
+
+}
+
+#search > input{
+  background-color: #dee2e6;
+  border-radius: 40px;
+  border: none;
+}
+
+
+#input-message .btn-primary {
+  background-color: #dee1e6;
+  border-color: #dee1e6;
+  color: #6d757d;
+
+}
+
+#input-message  .btn-primary:hover {
+  color: #7978b8;
+  background-color: #dcdced;
+  border-color: #c6c7d5;
+}
 
 @media (max-width: 768px){
 
