@@ -6,7 +6,7 @@ It's a simple theme for a application chat, built with html5 css3 and Jquery,whe
 
 ![alt text](img/screen.PNG "Description goes here")
 
-## Example dark theme
+## Example Dark theme
 
 ![alt text](img/screen-dark.PNG "Description goes here")
 
